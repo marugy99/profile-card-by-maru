@@ -5,7 +5,8 @@ body {
     background-color: hsl(185, 75%, 39%);
     box-sizing: border-box;
     color: #262432;
-    overflow: hidden;
+    overflow: hidden; 
+
 }
 
 h3 {
@@ -43,8 +44,8 @@ hr {
 }
 
 .card {
-    width: 22.1875rem;
-    height: 23.75rem;
+    max-width: 22.1875rem;
+    max-height: 23.75rem;
     background-color: white;
     border-radius: 1.25rem;
     overflow: hidden;
@@ -73,24 +74,70 @@ hr {
     justify-content: space-evenly;
 }
 
+.circle1, .circle2 {
+    max-width: 80vw;
+    position: absolute;
+    z-index: -1;
+}
+
 .circle1 {
-    max-width: 80vw;
-    position: absolute;
-    left: -300px;
-    top: -500px;
-    z-index: -1;
+    left: -130px;
+    top: -50px;
 }
 
-.circle2 {
-    max-width: 80vw;
-    position: absolute;
-    right: -300px;
-    bottom: -500px;
-    z-index: -1;
+.circle2{
+    right: -130px;
+    bottom: -50px; 
 }
 
-@media screen and (max-width: 500px) {
-    .circle1, .circle2 {
-        max-width: 150vw;
+@media (min-width:43.75em) {
+
+    body {
+        overflow: hidden; 
+    }
+
+    .circle1 {
+        left: -280px;
+        top: -350px;
+    }
+
+    .circle2{
+        right: -280px;
+        bottom: -350px; 
     }
 }
+
+@media (min-width:62em) {
+
+    body {
+        overflow: hidden; 
+    }
+
+    .circle1 {
+        left: -300px;
+        top: -600px;
+    }
+
+    .circle2{
+        right: -300px;
+        bottom: -600px; 
+    }
+}
+
+@media (min-width:87em) {
+
+    body {
+        overflow: hidden; 
+    }
+
+    .circle1 {
+        left: -200px;
+        top: -500px;
+    }
+
+    .circle2{
+        right: -200px;
+        bottom: -500px; 
+    }
+}
+
