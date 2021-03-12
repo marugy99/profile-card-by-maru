@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+
+body {
+    font-family: 'Kumbh Sans', sans-serif;
+    background-color: hsl(185, 75%, 39%);
+    box-sizing: border-box;
+    color: #262432;
+    overflow: hidden;
+}
+
+h3 {
+    font-size: 1.125rem;
+    font-weight: 700;
+    margin-top: 1.25rem;
+    margin-bottom: 0;
+}
+
+h4 {
+    color: #84848C;
+    font-weight: 400;
+    margin-top: 1rem; 
+    font-size: 1.125rem;
+}
+
+p {
+    color: #84848C;
+    font-weight: 400; 
+    font-size: 0.78rem;
+    margin-top: 8px;
+    letter-spacing: 2px;
+}
+
+hr {
+    margin: 0;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+#wrapper {
+    display: grid;
+    min-height: 100vh;
+    place-items: center;
+}
+
+.card {
+    width: 22.1875rem;
+    height: 23.75rem;
+    background-color: white;
+    border-radius: 1.25rem;
+    overflow: hidden;
+    text-align: center;
+}
+
+.cover-card {
+    object-fit: fill;
+    width: 100%;
+}
+
+.profile-photo {
+    border-radius: 50%;
+    border: 5px solid white;
+    margin-top: -60px;
+}
+
+#user-name::after {
+    content: ' 26';
+    color: #84848C;
+    font-weight: 400; 
+}
+
+.stats {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.circle1 {
+    max-width: 80vw;
+    position: absolute;
+    left: -300px;
+    top: -500px;
+    z-index: -1;
+}
+
+.circle2 {
+    max-width: 80vw;
+    position: absolute;
+    right: -300px;
+    bottom: -500px;
+    z-index: -1;
+}
+
+@media screen and (max-width: 500px) {
+    .circle1, .circle2 {
+        max-width: 150vw;
+    }
+}
